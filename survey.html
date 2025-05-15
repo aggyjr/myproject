@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Survey - Feedback Form">
+    <meta name="author" content="Jesca Andrew">
+    <title>Survey - Jesca Andrew</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><marquee behavior="scroll" direction="left" style="background-color:#333; color: yellowgreen; font-size: 34px; padding: 10px;">
+            Welcome to Jesca's Website
+        </marquee>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="survey">
+            <h1>Survey</h1>
+            <form id="survey-form">
+                <label for="feedback">How satisfied are you with my website?</label>
+                <input type="radio" name="satisfaction" value="Very Satisfied" required> Very Satisfied
+                <input type="radio" name="satisfaction" value="Satisfied"> Satisfied
+                <input type="radio" name="satisfaction" value="Unsatisfied"> Unsatisfied
+
+                <label for="improvement">What can I improve?</label>
+                <textarea id="improvement" name="improvement"></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Jesca Andrew. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(160, 103, 214);
+    color:white;
+
+    min-height: 100vh; /* Ensure body fills at least the whole screen */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Navigation */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #333;
+}
+
+header nav ul li {
+    margin: 10px 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    background-color: rgb(134, 88, 172);
+    flex: 1; /* Take all available vertical space between header and footer */
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Layouts */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.three-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* Buttons */
+.btn {
+    background-color: #5cb85c;
+    padding: 10px ;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label {
+    margin: 5px 0;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 1px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .three-column {
+        grid-template-columns: 1fr;
+    }
+}
